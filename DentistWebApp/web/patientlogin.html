@@ -1,0 +1,48 @@
+<!--
+Jason Arnold
+CIST 2373 Java 3
+patientlogin.html file for Semester project DentistWebApp
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Patient Login</title>
+        <script>
+            function validatePID() 
+            {
+		var PID;
+                PID=document.getElementById("PatID").value;
+                if(PID=="")
+                    alert("Patient ID is required.");
+            }
+
+	</script>
+                
+        <script type="text/javascript">
+  
+                function validatePass() 
+            {
+                var PWD;
+                PWD=document.getElementById("Pword").value;
+                if(PWD=="")
+                    alert("Password is required.");
+            }
+        </script>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align:center;">
+        <div class="center">
+            <h1>Patient Account Login</h1>
+            <form name="login" action="http://localhost:8080/DentistWebApp/PatientLoginServlet" method="post">
+            <label for="PatID">Patient ID:</label>
+            <input type="text" Id="PatID" name="PatID" onblur="validatePID()">
+            <label for="Pword">Password:</label>
+            <input type="text" Id="Pword" name="Pword" onblur="validatePass()">
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear"><br>
+            </form><br><br>
+        </div>
+    </body>
+</html>

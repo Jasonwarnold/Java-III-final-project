@@ -1,0 +1,56 @@
+header, nav, main, footer { display: block; } 
+* {box-sizing: border-box; }
+
+body { background-image: url("images/background.jpg");
+       display: block;
+}
+
+.center { display: block;
+          width: 55%;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: white;
+	   box-shadow: 5px 5px 5px;
+}
+.left { float: left;
+        margin-right: 15px;
+}
+
+form { display: block;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       width:250px;
+       box-shadow: 3px 3px 3px;
+}
+
+input, label { display:block;
+               margin-left: auto;
+               margin-right: auto;
+                         }
+
+table { font-family: arial, sans-serif;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 250px;
+	border-style: ridge;
+	border-width: 2px;
+	font-size: small;
+	text-align: center;
+}
+ td, tr { font-family: arial, sans-serif;
+	border-style: ridge;
+	border-width: 1px;
+}
+th { font-family: georgia, sans-serif;
+		border-style: ridge;
+		border-width: 1px;
+}
+img { display: block;
+      width:75%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 3px 3px 3px;
+}
+	  
